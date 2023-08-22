@@ -77,7 +77,7 @@ const Thread = () => {
                     <div className="comment-header">
                       {users.map((user) => 
                         user.id === thread.ownerId ? (
-                          <h1 key={user.id}>{user.name}</h1>
+                          <h1 className="fw-bold" key={user.id}>{user.name}</h1>
                         ) : null
                       )}
                       <p>{formatRelativeTime(thread.createdAt)}</p>

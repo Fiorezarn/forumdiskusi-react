@@ -21,7 +21,7 @@ const Header = () => {
         </ul>
       </div>  
       <div className="button">
-        <button className="btn btn-login">Login</button>
+        <Link to="/login" className="btn btn-login">Login</Link>
       </div>
     </div>
   );
