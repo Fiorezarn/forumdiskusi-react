@@ -1,0 +1,37 @@
+/* footer.scss */
+
+/* Copyright Area */
+.copyright-area {
+    background: #331D2C;
+    padding: 25px 0;
+  
+    .copyright-text {
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #878787;
+  
+        a {
+          color: #ff5e14;
+        }
+      }
+    }
+  }
+  
+  /* Footer Menu */
+  .footer-menu {
+    li {
+      display: inline-block;
+      margin-left: 20px;
+  
+      a {
+        font-size: 14px;
+        color: #878787;
+  
+        &:hover {
+          color: #ff5e14;
+        }
+      }
+    }
+  }
+  
