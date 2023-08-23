@@ -72,7 +72,7 @@ $third-color: #A78295;
   .category {
     text-align: left;
     color: $secondary-color;
-    height: 35px;
+    height: max-content;
 
     .category-value p {
         margin-bottom: 0; 

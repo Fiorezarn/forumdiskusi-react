@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import axios from "axios";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
@@ -30,6 +31,10 @@ const Thread = () => {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  function showCategory () {
+    
   }
 
   function formatRelativeTime(createdAt) {
@@ -82,7 +87,10 @@ const Thread = () => {
                       )}
                       <p>{formatRelativeTime(thread.createdAt)}</p>
                     </div>
+                    <Link to={`/detail/${thread.id}`}>
                     <h1 className="isikomen">{thread.title}</h1>
+                    </Link>
+                    <p>#{thread.category}</p>
                     <div className="icon">
                       <a href="/">
                         <i className="fa-regular fa-thumbs-up"></i>  
@@ -99,8 +107,9 @@ const Thread = () => {
               <div className="category">
                 <p>Kategori</p>
                 <div className="category-value"></div>
-                <p>#Redux</p>
-                <p>#vue</p>
+                {threads.map((thread) => (
+                <p>#{thread.category}</p>
+                ))} 
               </div>
             </div>
           </div>
