@@ -33,9 +33,9 @@ const Thread = () => {
     }
   }
 
-  function showCategory () {
+  // function showCategory () {
     
-  }
+  // }
 
   function formatRelativeTime(createdAt) {
     const now = new Date();
@@ -74,6 +74,7 @@ const Thread = () => {
             <div className="section col column d-flex justify-content-evenly rounded-1 align-items-start">
               <a href="/"><i className="fa-solid fa-house"></i> Home</a>
               <a href="/leaderboard"><i className="fa-solid fa-chart-column"></i> Leaderboard</a>
+              <a href="/add"><i class="fa-solid fa-square-plus"></i> Create Thread</a>
             </div>
             <div className="col-lg-8">
               {threads.map((thread, index) => (
